@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICFAI University - Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#" class="logo">ICFAI Student Portal</a>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('courses')">Courses</a></li>
+      <li><a href="#" onclick="showSection('faculty')">Faculty</a></li>
+      <li><a href="#" onclick="showSection('syllabus')">Syllabus</a></li>
+      <li><a href="#" onclick="showSection('result')">Result</a></li>
+      <li><a href="#" onclick="showSection('gradesheet')">Grade Sheet</a></li>
+      <li><a href="#" onclick="showSection('attendance')">Attendance</a></li>
+    </ul>
+  </nav>
+
+  <!-- Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search student by name...">
+    <button onclick="searchData()">Search</button>
+  </div>
+
+  <!-- Sections -->
+  <main>
+    <section id="courses" class="box hidden">
+      <h2>📘 Top Courses</h2>
+      <ul>
+        <li>B.Tech (CSE, ECE, Civil, Mechanical)</li>
+        <li>MBA</li>
+        <li>BBA</li>
+        <li>BCA</li>
+        <li>MCA</li>
+        <li>Law (LLB, LLM)</li>
+      </ul>
+    </section>
+
+    <section id="faculty" class="box hidden">
+      <h2>👨‍🏫 Faculty Profiles</h2>
+      <div class="faculty-card">Dr. sanjeev Kumar - Professor, CSE</div>
+      <div class="faculty-card">Dr.amita Sharma - Professor, MBA</div>
+      <div class="faculty-card">Mr. amit bara - Assistant Professor, Law</div>
+    </section>
+
+    <section id="syllabus" class="box hidden">
+      <h2>📚 Syllabus</h2>
+      <p>Select course to view syllabus:</p>
+      <ul>
+        <li>B.Tech CSE - <a href="#">Download PDF</a></li>
+        <li>MBA - <a href="#">Download PDF</a></li>
+        <li>BCA - <a href="#">Download PDF</a></li>
+      </ul>
+    </section>
+
+    <section id="result" class="box hidden">
+      <h2>🎓 Top 5 Student Results</h2>
+      <ul id="topResults"></ul>
+      <p>Search other students using the search bar above.</p>
+      <div id="searchResult"></div>
+    </section>
+
+    <section id="gradesheet" class="box hidden">
+      <h2>📝 Grade Sheet</h2>
+      <p>Search student name above to view grade sheet.</p>
+      <div id="gradeResult"></div>
+    </section>
+
+    <section id="attendance" class="box hidden">
+      <h2>📊 Attendance</h2>
+      <p>Search student name above to view attendance record.</p>
+      <div id="attendanceResult"></div>
+    </section>
+  </main>
+   <h2
+   >jatin saini project</h2>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 ICFAI University | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
